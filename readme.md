@@ -81,3 +81,25 @@ InceptionResnetV1 特征提取
 - 参与微信小程序前后端联调和功能测试
 - 针对页面切换后识别流程异常的问题进行排查，清理页面生命周期中的定时器并重新初始化识别状态
 - 实现连续未检测到人脸后的自动休眠及点击唤醒功能
+
+## 系统截图
+
+### 首页
+
+![首页](screenshots/home.png)
+
+### 人脸识别成功
+
+![人脸识别成功](screenshots/recognition-success.png)
+
+### 历史记录
+
+![历史记录](screenshots/history.png)
+
+### 休眠模式
+
+![休眠模式](screenshots/sleep-mode1.png)
+
+### 唤醒/异常状态
+
+![唤醒/异常状态](screenshots/sleep-mode2.png)
