@@ -1,0 +1,23 @@
+<view class="container"
+  bindtap="tapScreenWake"
+  style="opacity: {{screenDark ? 0.3 : 1}}; transition: all 0.5s ease;">
+
+  <view class="camera-box">
+    <view class="face-frame"></view>
+    <camera 
+      device-position="front" 
+      flash="off" 
+      binderror="cameraError"
+      style="width: 100%; height: 100%;"
+    ></camera>
+  </view>
+
+  <view class="result-box">
+    <text class="result-text {{resultType}}">{{resultMsg}}</text>
+  </view>
+
+  <view class="loading" wx:if="{{isDetecting}}">
+    <text>正在识别中...</text>
+  </view>
+
+</view>

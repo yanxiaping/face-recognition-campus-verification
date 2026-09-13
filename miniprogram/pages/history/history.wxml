@@ -1,0 +1,16 @@
+<view class="wrap">
+  <view class="title">📋 识别历史记录</view>
+
+  <view class="item" wx:for="{{historyList}}" wx:key="index">
+    <!-- 左侧：识别图片 -->
+    <image class="record-img" src="{{item.img}}" mode="aspectFill"></image>
+    <!-- 右侧：文字信息 -->
+    <view class="text-wrap">
+      <view>姓名：{{item.name}}</view>
+      <view>学号：{{item.student_id}}</view>
+      <view>时间：{{item.time}}</view>
+      <view class="{{item.allow_open ? 'ok' : 'no'}}">{{item.message}}</view>
+    </view>
+  </view>
+  <view class="empty" wx:if="{{historyList.length == 0}}">暂无记录</view>
+</view>
